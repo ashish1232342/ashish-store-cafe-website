@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - Ashish Store & Cafe</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/tailwindcss-accordion@2.0.2/dist/tailwindcss-accordion.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">🛍️ Ashish Store & Cafe</h1>
+      <nav class="space-x-6 text-sm md:text-base">
+        <a href="index.html" class="hover:text-yellow-400 transition">Home</a>
+        <a href="services.html" class="hover:text-yellow-400 transition font-semibold underline">Services</a>
+        <a href="contact.html" class="hover:text-yellow-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-16 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Our Services 🛠️</h2>
+      <p class="text-lg mb-6">Providing all your needs under one roof! 📚💻 From printing to online services, we’re here to help.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-10">Our Popular Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Online Work -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+          <i class="fas fa-laptop-code text-3xl text-blue-700 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">All Types of Online Work</h4>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Aadhar / PAN / Voter ID Applications</li>
+            <li>Online Government Forms</li>
+            <li>Bill Payment & Recharge</li>
+            <li>Resume / Job Application Assistance</li>
+          </ul>
+        </div>
+
+        <!-- Photocopy & Printing -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+          <i class="fas fa-copy text-3xl text-blue-700 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Photocopy & Printing</h4>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Black & White / Color Xerox</li>
+            <li>Document Printing (PDF, Word)</li>
+            <li>Scanning & Uploading</li>
+            <li>Lamination Services</li>
+          </ul>
+        </div>
+
+        <!-- Photo to Photo -->
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+          <i class="fas fa-image text-3xl text-blue-700 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Photo to Photo Services</h4>
+          <ul class="list-disc list-inside text-sm text-gray-700">
+            <li>Passport Size Photos</li>
+            <li>Photo Editing & Cropping</li>
+            <li>ID Size Conversion</li>
+            <li>Color Correction & Enhancement</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="py-16 px-4 bg-blue-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-10">Frequently Asked Questions ❓</h3>
+      <div class="accordion-container">
+        <div class="accordion">
+          <button class="accordion-item">
+            <div class="accordion-header">
+              <h4 class="text-xl font-semibold text-left">What services do you offer?</h4>
+            </div>
+            <div class="accordion-body">
+              <p>We provide online work services, document printing, photocopying, photo editing, and more. Please refer to our service list above for more details!</p>
+            </div>
+          </button>
+        </div>
+        <div class="accordion">
+          <button class="accordion-item">
+            <div class="accordion-header">
+              <h4 class="text-xl font-semibold text-left">Do you accept card payments?</h4>
+            </div>
+            <div class="accordion-body">
+              <p>Yes, we accept card payments as well as cash for all services. Contact us for more payment options.</p>
+            </div>
+          </button>
+        </div>
+        <div class="accordion">
+          <button class="accordion-item">
+            <div class="accordion-header">
+              <h4 class="text-xl font-semibold text-left">How fast is your service?</h4>
+            </div>
+            <div class="accordion-body">
+              <p>We aim to complete most tasks within an hour, depending on the workload. Urgent services are prioritized!</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request Form -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-10">Request a Service 📝</h3>
+      <form action="backend/contact.php" method="POST" class="space-y-6">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-4 border rounded-lg">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-4 border rounded-lg">
+        <textarea name="message" placeholder="Describe your service request" rows="4" class="w-full p-4 border rounded-lg"></textarea>
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-semibold">
+          Submit Request
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-16 px-4 bg-gray-100">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-10">Find Us 📍</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAP_EMBED_URL" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-800 mb-10">What Our Customers Say 💬</h3>
+      <div class="flex justify-center space-x-8">
+
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <img src="assets/images/testimonial1.jpg" alt="Customer 1" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p class="text-gray-700 mb-4">"The service was amazing! Got my documents printed in no time and at an affordable price. Highly recommend!"</p>
+          <p class="font-semibold text-blue-700">Ravi Kumar</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <img src="assets/images/testimonial2.jpg" alt="Customer 2" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <p class="text-gray-700 mb-4">"Fantastic photo services! The quality was great and the staff was very helpful. Will be back soon!"</p>
+          <p class="font-semibold text-blue-700">Priya Verma</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="text-center py-10 bg-yellow-100">
+    <p class="text-lg font-medium">Need help with something else? We’re here for you!</p>
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank"
+       class="inline-block mt-4 bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition">
+      💬 Contact us on WhatsApp
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p class="text-sm">&copy; 2025 Ashish General Store & Cafe. All rights reserved.</p>
+    <p class="text-sm">📍 Visit us in Bundu | 📞 917004959376</p>
+  </footer>
+
+</body>
+</html>
