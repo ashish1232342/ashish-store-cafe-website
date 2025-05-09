@@ -3,130 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing | Ashish Store & Cafe</title>
+  <title>Pricing Plans</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
+<body class="bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-5 shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Ashish Store & Cafe</h1>
-      <nav class="space-x-5 font-medium">
-        <a href="index.html" class="hover:text-yellow-300">Home</a>
-        <a href="services.html" class="hover:text-yellow-300">Services</a>
-        <a href="pricing.html" class="text-yellow-300 font-semibold">Pricing</a>
-        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
-      </nav>
-    </div>
-  </header>
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-500" data-aos="fade-up">
+      Choose Your Plan
+    </h2>
+    <p class="text-lg text-gray-600 mb-12 mt-4" data-aos="fade-up" data-aos-delay="150">Simple pricing for everyone</p>
 
-  <!-- Pricing Section -->
-  <section class="py-20">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">Choose Your Plan</h2>
-      <p class="text-lg text-gray-600 mb-12">Affordable & Flexible for Everyone</p>
-
-      <div class="grid gap-8 md:grid-cols-3 lg:grid-cols-5">
-        <!-- Basic -->
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2">
-          <i class="fas fa-leaf text-3xl text-green-600 mb-4"></i>
-          <h3 class="text-xl font-bold mb-1">Basic</h3>
-          <p class="text-gray-500 text-sm mb-4">Essentials only</p>
-          <ul class="text-sm text-left mb-6 space-y-2">
-            <li>✔️ B/W Prints</li>
-            <li>✔️ ID Photo</li>
-            <li>✔️ Scan & Email</li>
-          </ul>
-          <p class="text-2xl font-bold text-blue-700 mb-3">₹49</p>
-          <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 text-sm">Get Started</a>
-        </div>
-
-        <!-- Pro -->
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2">
-          <i class="fas fa-star text-3xl text-purple-600 mb-4"></i>
-          <h3 class="text-xl font-bold mb-1">Pro</h3>
-          <p class="text-gray-500 text-sm mb-4">For regular users</p>
-          <ul class="text-sm text-left mb-6 space-y-2">
-            <li>✔️ Color + B/W Prints</li>
-            <li>✔️ 2 Forms</li>
-            <li>✔️ 3 Photos</li>
-          </ul>
-          <p class="text-2xl font-bold text-blue-700 mb-3">₹99</p>
-          <a href="contact.html" class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 text-sm">Choose Plan</a>
-        </div>
-
-        <!-- Family -->
-        <div class="bg-yellow-100 border-2 border-yellow-400 rounded-xl shadow-lg p-6 hover:shadow-2xl transform scale-105">
-          <i class="fas fa-users text-3xl text-yellow-600 mb-4"></i>
-          <h3 class="text-xl font-bold mb-1">Family</h3>
-          <p class="text-gray-600 text-sm mb-4">Shared family pack</p>
-          <ul class="text-sm text-left mb-6 space-y-2">
-            <li>✔️ 10 Prints</li>
-            <li>✔️ 5 Photos</li>
-            <li>✔️ Aadhar + PAN Service</li>
-          </ul>
-          <p class="text-2xl font-bold text-yellow-700 mb-3">₹149</p>
-          <a href="contact.html" class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 text-sm">Start Family</a>
-        </div>
-
-        <!-- Business -->
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2">
-          <i class="fas fa-briefcase text-3xl text-blue-800 mb-4"></i>
-          <h3 class="text-xl font-bold mb-1">Business</h3>
-          <p class="text-gray-500 text-sm mb-4">High volume needs</p>
-          <ul class="text-sm text-left mb-6 space-y-2">
-            <li>✔️ Unlimited Prints</li>
-            <li>✔️ Photo Batch Edits</li>
-            <li>✔️ Dedicated Support</li>
-          </ul>
-          <p class="text-2xl font-bold text-blue-700 mb-3">₹299</p>
-          <a href="contact.html" class="bg-blue-800 text-white px-4 py-2 rounded-full hover:bg-blue-900 text-sm">Upgrade</a>
-        </div>
-
-        <!-- Student -->
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2">
-          <i class="fas fa-graduation-cap text-3xl text-green-700 mb-4"></i>
-          <h3 class="text-xl font-bold mb-1">Student</h3>
-          <p class="text-gray-500 text-sm mb-4">Budget friendly</p>
-          <ul class="text-sm text-left mb-6 space-y-2">
-            <li>✔️ Discounted Prints</li>
-            <li>✔️ Resume + Docs</li>
-            <li>✔️ ID & Forms</li>
-          </ul>
-          <p class="text-2xl font-bold text-green-700 mb-3">₹39</p>
-          <a href="contact.html" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 text-sm">Enroll</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-8 mt-12">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div>
-        <h4 class="text-lg font-bold mb-2">Ashish Store & Cafe</h4>
-        <p class="text-sm">Bund, Jharkhand<br>+91 917004959376</p>
-      </div>
-      <div>
-        <h4 class="text-lg font-bold mb-2">Quick Links</h4>
-        <ul class="text-sm space-y-1">
-          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
-          <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+    <!-- First row -->
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-8">
+      <!-- Basic Plan -->
+      <div class="bg-white p-8 rounded-3xl shadow-xl transform hover:scale-105 transition duration-500" data-aos="zoom-in">
+        <div class="mb-4 text-indigo-600 text-4xl"><i class="fas fa-leaf"></i></div>
+        <h3 class="text-2xl font-bold mb-2 text-indigo-700">Basic</h3>
+        <p class="text-gray-500 mb-4">Great for quick tasks</p>
+        <ul class="text-left text-sm mb-6 space-y-2">
+          <li>✔️ 5 B/W Prints</li>
+          <li>✔️ 1 ID Photo</li>
+          <li>✔️ Aadhar Form</li>
         </ul>
+        <div class="text-3xl font-bold text-indigo-800 mb-4">₹49</div>
+        <a href="contact.html" class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition">Select</a>
       </div>
-      <div>
-        <h4 class="text-lg font-bold mb-2">Legal</h4>
-        <ul class="text-sm space-y-1">
-          <li><a href="terms-and-conditions.html" class="hover:text-yellow-300">Terms & Conditions</a></li>
-          <li><a href="privacy-policy.html" class="hover:text-yellow-300">Privacy Policy</a></li>
+
+      <!-- Family Plan -->
+      <div class="bg-gradient-to-br from-yellow-300 to-orange-100 p-10 rounded-3xl shadow-2xl border-4 border-yellow-400 relative transform hover:scale-110 transition duration-500" data-aos="zoom-in" data-aos-delay="150">
+        <span class="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-bold px-4 py-1 rounded-bl-2xl">Best Value</span>
+        <div class="mb-4 text-yellow-800 text-4xl"><i class="fas fa-users"></i></div>
+        <h3 class="text-2xl font-bold mb-2 text-yellow-800">Family</h3>
+        <p class="text-gray-700 mb-4">Designed for multiple users</p>
+        <ul class="text-left text-sm mb-6 space-y-2">
+          <li>✔️ 15 Prints</li>
+          <li>✔️ 5 Photos</li>
+          <li>✔️ Document Help</li>
         </ul>
+        <div class="text-3xl font-bold text-yellow-900 mb-4">₹149</div>
+        <a href="contact.html" class="bg-yellow-600 text-white px-6 py-2 rounded-full hover:bg-yellow-700 transition">Choose</a>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="bg-white p-8 rounded-3xl shadow-xl transform hover:scale-105 transition duration-500" data-aos="zoom-in" data-aos-delay="300">
+        <div class="mb-4 text-blue-800 text-4xl"><i class="fas fa-briefcase"></i></div>
+        <h3 class="text-2xl font-bold mb-2 text-blue-900">Business</h3>
+        <p class="text-gray-500 mb-4">Heavy usage needs</p>
+        <ul class="text-left text-sm mb-6 space-y-2">
+          <li>✔️ Unlimited Printing</li>
+          <li>✔️ Priority Service</li>
+          <li>✔️ Branding Support</li>
+        </ul>
+        <div class="text-3xl font-bold text-blue-900 mb-4">₹299</div>
+        <a href="contact.html" class="bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition">Get Business</a>
       </div>
     </div>
-    <div class="text-center text-sm mt-6 text-blue-300">&copy; 2025 Ashish General Store & Cafe. All rights reserved.</div>
-  </footer>
+
+    <!-- Second row -->
+    <div class="grid gap-10 md:grid-cols-2 mt-16 max-w-4xl mx-auto">
+      <!-- Pro -->
+      <div class="bg-white p-8 rounded-3xl shadow-xl transform hover:scale-105 transition duration-500" data-aos="fade-right">
+        <div class="mb-4 text-purple-600 text-4xl"><i class="fas fa-star"></i></div>
+        <h3 class="text-2xl font-bold mb-2 text-purple-700">Pro</h3>
+        <p class="text-gray-500 mb-4">Frequent access users</p>
+        <ul class="text-left text-sm mb-6 space-y-2">
+          <li>✔️ Color & B/W</li>
+          <li>✔️ 3 Docs per Day</li>
+          <li>✔️ Fast Service</li>
+        </ul>
+        <div class="text-3xl font-bold text-purple-800 mb-4">₹99</div>
+        <a href="contact.html" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition">Select Pro</a>
+      </div>
+
+      <!-- Student -->
+      <div class="bg-white p-8 rounded-3xl shadow-xl transform hover:scale-105 transition duration-500" data-aos="fade-left">
+        <div class="mb-4 text-green-600 text-4xl"><i class="fas fa-graduation-cap"></i></div>
+        <h3 class="text-2xl font-bold mb-2 text-green-700">Student</h3>
+        <p class="text-gray-500 mb-4">Budget-friendly options</p>
+        <ul class="text-left text-sm mb-6 space-y-2">
+          <li>✔️ Resume Help</li>
+          <li>✔️ ID Cards & Docs</li>
+          <li>✔️ Discount Prints</li>
+        </ul>
+        <div class="text-3xl font-bold text-green-700 mb-4">₹39</div>
+        <a href="contact.html" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition">Get Student Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
 
 </body>
 </html>
