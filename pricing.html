@@ -7,13 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
     html {
       scroll-behavior: smooth;
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800">
+<body class="bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800 min-h-screen">
 
 <!-- Header -->
 <header class="bg-gradient-to-r from-blue-800 to-indigo-800 text-white shadow-md sticky top-0 z-50">
@@ -112,43 +113,22 @@
   </div>
 </section>
 
-
 <!-- Footer -->
-<footer class="bg-blue-900 text-white pt-12 pb-6">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-left">
-      <!-- Shop Details -->
-      <div class="mb-8 md:mb-0">
-        <h4 class="text-xl font-bold mb-3 text-yellow-300 transform transition duration-300 hover:scale-105 hover:text-white">Shop Details</h4>
-        <p class="text-sm mb-1">📍 Bundu, Jharkhand</p>
-        <p class="text-sm">📞 +91 917004959376</p>
-      </div>
-      <!-- Quick Links -->
-      <div class="mb-8 md:mb-0">
-        <h4 class="text-xl font-bold mb-3 text-yellow-300 transform transition duration-300 hover:scale-105 hover:text-white">Quick Links</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="terms-and-conditions.html" class="hover:text-yellow-400 transition duration-300 hover:underline">Terms</a></li>
-          <li><a href="services.html" class="hover:text-yellow-400 transition duration-300 hover:underline">Services</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-400 transition duration-300 hover:underline">Contact</a></li>
-        </ul>
-      </div>
-      <!-- Social & Terms -->
-      <div class="flex justify-center flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
-        <div class="flex space-x-6">
-          <a href="https://facebook.com" target="_blank" class="hover:text-yellow-400 text-2xl transition duration-300">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" class="hover:text-yellow-400 text-2xl transition duration-300">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank" class="hover:text-yellow-400 text-2xl transition duration-300">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
-      </div>
+<footer class="bg-gray-800 text-white py-6 mt-20">
+  <div class="container mx-auto px-6 text-center">
+    <p class="text-sm">📍 Bundu, Jharkhand</p>
+    <p class="text-sm">📞 +91 917004959376</p>
+    <div class="mt-4">
+      <a href="#" class="text-yellow-400">Terms</a> |
+      <a href="services.html" class="text-yellow-400">Services</a> |
+      <a href="contact.html" class="text-yellow-400">Contact</a>
     </div>
   </div>
 </footer>
+
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
